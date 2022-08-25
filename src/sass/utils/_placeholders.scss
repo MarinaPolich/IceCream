@@ -1,0 +1,41 @@
+%visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+%button {
+    display: inline-flex;
+    text-align: center;
+
+    padding: 12px 33px;
+    
+    background-color: $accent-color;
+    color: $title-color;
+    border: none;
+    border-radius: 10px;
+
+    font-family: $font-montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        background-color: $action-color;
+    }
+
+    & .button__icon {
+        fill: $title-color;
+        margin-left: 15px;
+    }
+}

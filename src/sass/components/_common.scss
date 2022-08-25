@@ -1,1 +1,33 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+    background-color: $primary-color;
+    color: var(--primary-text-color);
+
+    font-family: $font-montserrat;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+}
+
+.visually-hidden {
+    @extend %visually-hidden;
+}
+
+.container {
+    max-width: $mobile;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media screen and (min-width: $tablet) {
+        width: $tablet;
+        padding: 0 32px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: $desktop;
+        padding: 0 16px;
+    }
+}
