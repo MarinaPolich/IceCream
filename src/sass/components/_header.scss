@@ -1,69 +1,66 @@
 .flex-box{
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 }
+
 .header{
     position: relative;
-
 
     background-color: $bg-color;
     padding-top: 16px;
     padding-bottom: 7px;
     overflow: hidden;
-    
-}.logo{
+}
+
+.logo{
     @media screen and (min-width:$tablet){
         margin-right: 269px;
     }
-    
 }
+
 .navi{
     display: flex;
 
-    
     @media screen and (max-width:$desktop){
-    transition: all 250ms linear;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100%;
-    background-color:$bg-color;
-    transform: translateX(100%);
+        transition: all 250ms linear;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        background-color:$bg-color;
+        transform: translateX(100%);
     }
-    
-    
-    
 }
-.naavi.is-open{
+
+.navi.is-open{
     transform: translateX(0);
 }
 
 .navi__list{
     display: flex;
 }
+
 .navi__item{
     &:not(:last-child){
         margin-right: 27px;
     }
 }
+
 .navi__link{
+    color:$primary-color;
 
     font-weight: 700;
     font-size: 16px;
     line-height: 1.25;
-
-    color:$primary-color;
-    
 }
 
 .btn-box{
     display: flex;
     margin-left: auto;
 }
+
 .menu-btn{
-    
     height: 40px;
     width: 40px;
     border: none;
@@ -73,16 +70,11 @@
     @media screen and (min-width:$tablet){
         margin-right: 40px;
     }
+
     @media screen and (min-width:$desktop){
-        display: none;
-        
-    }
-    
+        display: none;  
+    } 
 }
-
-
-
-
 
 .buy-btn{
     width: 150px;
@@ -98,11 +90,12 @@
 
     background-color: $accent-color;
     display: none;
+
     @media screen and(min-width:$tablet){
         display: block;
-
     }
 }
+
 .buy-btn__icon{
     vertical-align: middle;
 }
