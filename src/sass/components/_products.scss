@@ -1,0 +1,82 @@
+.products {
+    font-family: $font-montserrat;
+    background-image: url(../images/Frame28.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.products__label {
+    font-family: $font-montserrat;
+    text-align: center;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px; 
+    margin-bottom: 12px;  
+}
+
+.section__title {
+    color: $title-color;
+    text-transform: uppercase;
+    font-family: $font-seymour-one;
+    text-align: center;
+}
+
+.products-list {
+    color: $text-color;
+}
+
+.products-list__title {
+    color: $text-color;
+    font-family: $font-montserrat;
+    text-transform: uppercase;
+    margin-top: 123px;
+    margin-bottom: 40px;
+}
+
+.products-list__card {
+    position: relative;
+    padding: 123px 40px 0 40px;
+    // width: 280px;
+    // height: 420px;
+    margin-top: 40px;
+    text-align: center;
+    border-radius: 24px;
+    margin-top: 145px;
+    &::before {
+        position: absolute;
+        content: "";    
+        width: 200px;
+        height: 210px;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url(../images/prod1mob.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+       
+        
+
+        border-radius: 50%;   
+    }
+    &.one {    
+        background-color: #AEC6A5;
+    }
+    &.two {    
+        background-color: #EFD478;
+    }
+    &.three {    
+        background-color: #D6936D;
+    }
+}
+
+.products-list__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 176%;
+    color: $text-color;
+    font-family: $font-montserrat;
+    text-align: center;
+}
+
