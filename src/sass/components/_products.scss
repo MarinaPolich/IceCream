@@ -1,43 +1,21 @@
 .products {
-    
     background-image: url(../images/Frame28.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
-    font-family: $font-montserrat;
 }
 
-.products__label {
-    margin-bottom: 12px; 
-
-    font-family: $font-montserrat;
-    text-align: center;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 22px;  
+.section__label {
+    color: $title-color; 
 }
 
 .section__title {
     color: $title-color;
-
-    text-transform: uppercase;
-    font-family: $font-seymour-one;
-    text-align: center;
+    margin-bottom: 40px;
 }
 
 .products-list {
     color: $text-color;
-}
-
-.products-list__title {
-    margin-top: 123px;
-    margin-bottom: 40px;
-
-    color: $text-color;
-
-    font-family: $font-montserrat;
-    text-transform: uppercase;
 }
 
 .products-list__card {
@@ -81,14 +59,27 @@
     }
 }
 
+.products-list__title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    color: $text-color;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+
+
 .products-list__text {
     text-align: center;
 
     color: $text-color;
 
     font-family: $font-montserrat;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 14px;
-    line-height: 176%;
+    line-height: 1.76;
 }
 
