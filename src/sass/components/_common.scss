@@ -34,3 +34,12 @@ body {
         padding: 0 16px;
     }
 }
+
+.section {
+    padding-top: 60px;
+    
+
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 60px;
+    }
+}
