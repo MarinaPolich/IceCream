@@ -1,6 +1,10 @@
 .about.section {
   font-family: $font-montserrat;
   background-color: $bg-color;
+
+  @media screen and (max-width: $desktop) {
+    padding-bottom: 40px;
+  }
 }
 
 .section__label {
@@ -22,36 +26,82 @@
   font-size: 30px;
   line-height: 1.26;
   letter-spacing: 0.04em;
-  width: 200px;
-  //   height: 117px;
   margin-bottom: 32px;
   color: $primary-color;
+  @media screen and(max-width:$mobile) {
+    width: 200px;
+  }
 }
 
-.about__text-wrapper {
-  @media screen and (max-width: 767px) {
-    margin-top: 372px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-top: 79px;
+.about__block {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 35px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-top: 172px;
+    column-gap: 100px;
+    
+  }
+}
+
+.about__text-wrapper {
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    margin-top: 85px;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    // margin-top: 79px;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
+
+  @media screen and (max-width: $mobile) {
+    margin-top: 85px;
   }
 }
 
 .about__text {
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.75;
   letter-spacing: 0.04em;
   color: $primary-color;
-  width: 220px;
-  margin-right: auto;
+
+  //   margin-right: auto;
+
+  @media screen and (min-width: 320px) and (max-width: 330px) {
+    max-width: 220px;
+  }
+
+  @media screen and (max-width: $mobile) {
+    max-width: 400px;
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    max-width: 334px;
+    display: block;
+  }
+  &--hidden {
+    @media screen and (max-width: $tablet) {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      border: 0;
+      padding: 0;
+      clip: rect(0 0 0 0);
+      clip-path: inset(50%);
+      margin: -1px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 463px;
+  }
 }
 
 .about__text.visually-hidden {
@@ -59,48 +109,73 @@
 }
 
 .about__wrapper {
-  margin-bottom: 300px;
   position: relative;
 }
 
 .about__wrapper::before {
-  position: absolute;
-  //   right: 0;
-  //   top: 21.81;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
 
-  //   display: block;
+  display: block;
+  content: '';
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 278px;
+  height: 278px;
+  background-size: 278px 278px;
+  border-radius: 50%;
+
+  background-color: rgb(76, 216, 44);
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    width: 330px;
+    height: 330px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 490px;
+    height: 490px;
+  }
+}
+
+.about__wrapper::after {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
   content: '';
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  //   min-width: 278.19px;
-  //   min-height: 278.19px;
 
   border-radius: 50%;
 
-  //   background-color: rgb(76, 216, 44);
-
-  @media screen and(max-width:767px) {
+  @media screen and(max-width: $tablet) {
     background-image: url(../images/cow-mob-1x.png);
     // max-width: 480px;
-    min-width: 278.19px;
-    min-height: 278.19px;
-    top: -360px;
-    left: 0;
+    width: 278.19px;
+    height: 278.19px;
+    background-size: 278.19px 278.19px;
+
+    transform: translateX(-50%);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
       background-image: url(../images/cow-mob-2x.png);
-      min-width: 278.19px;
-      min-height: 278.19px;
-      top: -370px;
-      left: 0;
+      width: 278.19px;
+      height: 278.19px;
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
     background-image: url(../images/cow-tablet-1x.png);
+    width: 330px;
+    height: 330px;
+    background-size: 330px 330px;
 
     @media screen and(min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -108,9 +183,12 @@
       background-image: url(../images/cow-tablet-2x.png);
     }
   }
-  @media screen and(min-width: 1200px) {
-    padding: 200px 0;
+  @media screen and(min-width: $desktop) {
     background-image: url(../images/cow-desktop-1x.png);
+
+    width: 490px;
+    height: 490px;
+    background-size: 490px 490px;
 
     @media screen and(min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
