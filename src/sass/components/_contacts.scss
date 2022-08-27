@@ -1,0 +1,114 @@
+.feature__contacts {
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-color;  
+
+ }
+
+.contacts__set {
+   
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    } 
+}
+
+.contact {
+    padding: 40px 32px;
+    margin-bottom: 20px;
+    width: 100%;
+    background: $primary-color;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    
+    
+}
+
+.contacts__label {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 0.04em;
+    padding: 0 10px;
+    margin-bottom: 20px;
+    color: $primary-color;
+    align-items: center;
+    text-align: center;
+    background: $accent-color;
+    border-radius: 4px
+}
+
+.contacts__city {
+    font-family: $font-montserrat;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    margin-bottom: 8px;
+    color: $title-color;
+}
+
+.contacts__nav {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+    color: $contact-text-color;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.contacts__day {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: $title-color;
+    &.one {
+        padding-top: 24px;
+    }
+}
+
+.contacts__time {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: $disabled-color;
+    margin-bottom: 8px;
+    &.border {
+       padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1; 
+    }
+}
+
+.contacts__link {
+    display: block;
+    font-size: 12px;
+    line-height: 18px;
+    color: $contact-text-color;
+    &.nav {
+        padding-top: 24px;
+    }
+}
+
+.contacts__button {
+    display: grid;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.button {
+    margin-bottom: 8px;
+    @extend %button;
+    &.franch{
+        border: 2px solid $accent-color;
+        background-color: $bg-color;
+        border-color: $accent-color;
+        color: $primary-color;
+        &:hover,
+        &:focus {
+            border-color: $action-color;
+        }
+    }
+}
