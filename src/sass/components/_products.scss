@@ -1,61 +1,149 @@
 .products {
-    background-image: url(../images/Frame28.png);
+    background-image: url(../images/bgmob.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.section__label {
-    color: $title-color; 
+.products__label {
+    text-align: center;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 22px; 
+    margin-bottom: 12px;  
 }
 
 .section__title {
     color: $title-color;
-    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .products-list {
     color: $text-color;
 }
 
+.products-list__title {
+    color: $text-color;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
 .products-list__card {
     position: relative;
+    // padding: 123px 40px 0 40px;
+    width: 100%;
+    margin-top: 143px;
     text-align: center;
-    padding: 123px 40px 0 40px;
-    // width: 280px;
-    // height: 420px;
-    margin-top: 40px;
-    margin-bottom: 145px;
-
     border-radius: 24px;
 
-    &::before {
-        position: absolute;
-        content: "";    
-        width: 200px;
-        height: 210px;
-        top: 0;
-        left: 50%;
-
-        background: url(../images/prod1mob.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-       
-        border-radius: 50%; 
-        transform: translate(-50%, -50%);  
-    }
-
     &.one {    
-        background-color: #AEC6A5;
+        background-color: #AEC6A5; 
+        
+        &::before {
+            position: relative;
+            display: block;
+            content: "";
+            background-color: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+            width: 200px;
+            height: 200px;
+            margin-top: 51px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            border-radius: 50%;
+        }
+        
+        &.one::after {
+            position: relative;
+            display: block;
+            content: "";
+            width: 200px;
+            height: 200px;
+            margin-top: 51px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -240%);
+            border-radius: 50%;
+            background-image: url(../images/prod1mob.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 200px 200px;
+        }
     }
 
     &.two {    
         background-color: #EFD478;
+        
+        &::before {
+            position: relative;
+            display: block;
+            content: "";
+            background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+            width: 200px;
+            height: 200px;
+            margin-top: 51px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            border-radius: 50%;
+        }
+
+        &.two::after {
+            position: relative;
+            display: block;
+            content: "";
+            width: 200px;
+            height: 200px;
+            margin-top: 51px;
+            top: 50%;
+            left: 50%;
+            
+            transform: translate(-50%, -253%);
+            border-radius: 50%;
+            background-image: url(../images/prod2mob.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 200px 200px;
+        }
     }
 
     &.three {    
         background-color: #D6936D;
+        
+         &::before {
+            position: relative;
+            display: block;
+            content: "";
+            background-color: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
+            box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+            width: 200px;
+            height: 200px;
+            margin-top: 51px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            border-radius: 50%;
+        }
+        
+        &.three::after {
+            position: relative;
+            display: block;
+            content: "";
+            width: 200px;
+            height: 200px;
+            margin-top: 51px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -253%);
+            border-radius: 50%;    
+            background-image: url(../images/prod3mob.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 200px 200px;
+        }
     }
 }
 
@@ -76,10 +164,6 @@
     text-align: center;
 
     color: $text-color;
-
-    font-family: $font-montserrat;
-    font-weight: 400px;
-    font-size: 14px;
-    line-height: 1.76;
+    text-align: center;
 }
 
