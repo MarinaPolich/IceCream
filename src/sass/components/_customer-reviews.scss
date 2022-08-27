@@ -1,0 +1,121 @@
+.review {
+        background-image: url(../images/gallery_reviews/bgimob1x.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+           
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image:
+                url(../images/gallery_reviews/bgimob2x.jpg);
+    
+        }
+    
+        @media screen and (min-width:480px) and (max-width:768px) {
+    
+            background-image: url(../images/gallery_reviews/bgitab1x.jpg);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/gallery_reviews/bgitab2x.jpg);
+    
+            }
+        }
+    
+        @media screen and (min-width:768px) and (max-width:1199px) {
+            background-image: url(../images/gallery_reviews/bgidesk1x.jpg);
+           
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image:
+                    url(../images/gallery_reviews/bgidesk2x.jpg);
+    
+            }
+        }
+                @media screen and (min-width:1200px){
+                    background-image: url(../images/gallery_reviews/bgidesk1x.jpg);
+                      
+                    
+                        @media (min-device-pixel-ratio: 2),
+                        (min-resolution: 192dpi),
+                        (min-resolution: 2dppx) {
+                            background-image:
+                                url(../images/gallery_reviews/bgidesk2x.jpg);
+                }
+}}
+.review__content {
+    margin-top: 160px;
+}
+
+.review__img-wrapper {
+  
+ width: 85px;
+ height: 85px;
+margin-left: auto;
+margin-right: auto;
+
+}
+.review__img {
+border-radius: 50%;
+}
+.review__text {
+    background-color:$bg-color ;
+    padding: 43px 50px 17px 50px;
+    line-height: 2.55;
+    text-align: center;
+    color: $primary-color;
+    margin: 32px auto;
+    border-radius: 10px;
+    max-width: 480px;
+    
+    @media screen and (min-width:768px){
+        padding: 29px 80px;
+        max-width: 705px;
+        border-radius: 24px;
+    }
+         @media screen and (min-width:1200px) {
+             padding: 29px 80px;
+             max-width: 968px;
+             border-radius: 24px;
+         }
+}
+.review__name {
+    line-height: 2.55;
+        text-align: center;
+        color: $text-color;
+        font-size: 20px;
+     font-weight: 500;
+    @media screen and (min-width:768px){
+        font-size: 16px;
+        line-height: 1.86;
+    }
+      
+}
+.slick-dots {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+li {
+    &:not(:last-child){
+        margin-right: 18px;
+    }
+}
+button {
+width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $title-color;
+    font-size: 0;
+    border: none;
+    &:hover,&:focus,&:active{
+        background-color: #84A178;
+        
+        transform: scale(1.4);
+    }
+}

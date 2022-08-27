@@ -1,5 +1,27 @@
-.wraper {
-    background-image:url(../images/gallery_reviews/bgimob1x.jpg);
-    background-repeat: no-repeat;
-      background-position: center;
+
+.gallery__container {
+    position:relative;
+       margin-left: auto;
+    margin-right: auto;
+      
 }
+.gallery__img-wraper {
+        bottom: 0;
+            position: absolute;
+            width:calc(100% - 40px);
+            max-width: 480px;
+            margin: 0 auto;
+        
+            @media screen and (min-width:480px) {
+                max-width: 768px;
+                
+                margin-top: -164px;
+            }
+        
+            @media screen and (min-width:768px){
+                max-width: 1200px;
+                margin-top: -92px;
+            }
+        }
+
+
