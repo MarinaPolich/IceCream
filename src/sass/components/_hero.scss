@@ -1,0 +1,82 @@
+@keyframes heroimage-mobile{
+    0%{
+        transform: translate(53%, 100%);
+    }
+    100%{
+        transform: translate(53%, 17%);
+    }
+}
+.hero{
+    position: relative;
+    overflow: hidden;
+    background-color: $bg-color;
+    height: 450px;
+}
+.hero__title{
+    margin-bottom: 29px;
+
+    font-family: 'Seymour One';
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $white-text-color;
+    
+    
+}
+.hero__accent{
+    font-size: 34px;
+    line-height: 0.96;
+}
+
+.hero-link-box__link{
+    display: block;
+    font-size: 8px;
+    line-height: 1.12;
+    padding: 5px 10px;
+
+    text-align: center;
+    
+    &:not(:last-child){
+        margin-right: 8px;
+    }
+    
+
+    &--btn{
+        border: 2px solid $accent-color;
+        border-radius: 8px;
+        color: $title-color;
+        
+        
+    }
+
+    &--link{
+        color: $accent-color;
+        text-decoration: underline;
+    }
+}
+
+.img-hero{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateY(100%);
+    
+ 
+    animation-name: heroimage-mobile;
+    animation-duration: 250ms;
+    animation-timing-function: $timing-function;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+.hero-decor__dots{
+    position: absolute;
+    bottom: 0;
+}
+.hero-decor__dots--left{
+    left: 0;
+}
+.hero-decor__dots--right{
+    right: 0;
+}
