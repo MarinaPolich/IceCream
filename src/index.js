@@ -9,19 +9,32 @@ $('.slider').slick({
     {
       breakpoint: 1024,
       settings: {
+     
         slidesToShow: 3,
+       
         infinite: true,
       },
     },
     {
-      breakpoint: 780,
+      breakpoint: 768,
       settings: {
+       
         slidesToShow: 3,
+      
         dots: true,
       },
     },
     {
-      breakpoint: 300,
+      breakpoint: 480,
+      settings: {
+      
+        slidesToShow: 2,
+          slidesToScroll: 3,
+        dots: true,
+      },
+    },
+    {
+      breakpoint: 269,
       settings: 'unslick', // destroys slick
     },
   ],
