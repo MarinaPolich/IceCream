@@ -1,0 +1,7 @@
+@mixin transition($props...) {
+    $result: ();
+      @each $prop in $props {
+       $result: append($result, ($prop 250ms var(--timing-function)), $separator: comma);  
+      }  
+      transition: $result; 
+  }
