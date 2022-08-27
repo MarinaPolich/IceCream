@@ -5,15 +5,15 @@
 .contacts__list {
     padding: 40px 32px;
     margin-bottom: 20px;
-    width: 280px;
-    height: 412px;
+    width: 100%;
+    // height: 412px;
     background: $primary-color;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
 }
 
-.contact__addres {
-    border-bottom: 1px solid #E1E1E1;
+.contacts__addres {
+    // border-bottom: 1px solid #E1E1E1;
   
 }
 
@@ -42,18 +42,31 @@
 }
 
 .contacts__nav {
+    position: relative;
     font-family: $font-montserrat;
     font-weight: 500;
     font-size: 12px;
     line-height: 183%;
     letter-spacing: 0.04em;
     color: $contact-text-color;
+    margin-bottom: 24px;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #E1E1E1;
+
+    }
 }
 
 .contacts__work {
     margin-top: 8px;
     margin-bottom: 23px;
-    border-bottom: 1px solid #E1E1E1;
+    // border-bottom: 1px solid #E1E1E1;
 }
 
 .contacts__day {
@@ -68,6 +81,7 @@
     font-size: 12px;
     line-height: 186%;
     color: $disabled-color;
+    margin-bottom: 24px;
 }
 
 .contacts__link {
