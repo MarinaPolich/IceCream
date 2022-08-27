@@ -33,6 +33,9 @@
         background-color:$bg-color;
         transform: translateX(100%);
     }
+    @media screen and (min-width:$desktop){
+        
+    }
 }
 
 .navi.is-open{

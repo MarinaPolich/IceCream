@@ -4,6 +4,7 @@
     }
     100%{
         transform: translate(53%, 17%);
+        z-index: 1;
     }
 }
 @keyframes heroimage-tablet{
@@ -11,12 +12,14 @@
         transform: translate(13%, 100%);
     }
     100%{
-        transform: translate(13%, 17%);
+        transform: translate(13%, 13%);
+        z-index: 1;
     }
 }
 .flex-box--justify{
     align-items: baseline;
 }
+
 .hero{
     position: relative;
     overflow: hidden;
@@ -38,6 +41,13 @@
     color: $white-text-color;
     @media screen and (min-width:$tablet){
         font-size: 18px;
+        margin-bottom: 25px;
+    }
+    @media screen and (min-width:$desktop){
+        font-size: 38px;
+        margin-bottom: 19px;
+
+ 
     }
     
     
@@ -48,6 +58,12 @@
     @media screen and (min-width:$tablet){
         font-size: 16px;
     }
+    @media screen and (min-width:$desktop){
+        font-size: 38px;
+
+ 
+    }
+
 }
 
 .hero-link-box__link{
@@ -62,7 +78,9 @@
     &:not(:last-child){
         margin-right: 8px;
     }
-    
+    @media screen and (min-width:$desktop){
+        margin-bottom: 40px;
+    }
 
     &--btn{
         border: 2px solid $accent-color;
@@ -100,6 +118,10 @@
     @media screen and (min-width:$tablet){
         display: flex;
         align-items: center;
+        
+    }
+    @media screen and (min-width:$desktop){
+        margin-bottom: 63px;
     }
 }
 .hero-offer__img{
@@ -108,10 +130,20 @@
 }
 .hero-offer__description{
     width: 150px;
+
+    @media screen and (min-width:$desktop){
+        width: 200px;
+    }
     
 }
 .hero-offer__text{
     color: $white-text-color;
+    font-size: 12px;
+    line-height: 1.4;
+
+    @media screen and (min-width:$desktop){
+        font-size: 14px;;
+    }
 }
 .hero-offer__icon{
     fill: $white-text-color;
@@ -169,11 +201,11 @@
     animation-timing-function: $timing-function;
     animation-delay: 1s;
     animation-fill-mode: forwards;
-    z-index: 1;
+    z-index: -1;
 
     @media screen and(min-width:$tablet){
         animation-name: heroimage-tablet;
-        right: 80px;
+        right: 10%;
 
     }
 }
