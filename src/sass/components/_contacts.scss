@@ -1,28 +1,36 @@
 .feature__contacts {
-    background-color: $bg-color;
+    justify-content: center;
+    align-items: center;
+    background-color: $bg-color;  
+
+ }
+
+.contacts__set {
+   
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+    } 
 }
 
-.contacts__list {
+.contact {
     padding: 40px 32px;
     margin-bottom: 20px;
     width: 100%;
-    // height: 412px;
     background: $primary-color;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-}
-
-.contacts__addres {
-    // border-bottom: 1px solid #E1E1E1;
-  
+    
+    
 }
 
 .contacts__label {
+    display: inline-block;
     font-weight: 500;
     font-size: 12px;
     line-height: 22px;
     letter-spacing: 0.04em;
-    width: 130px;
+    padding: 0 10px;
     margin-bottom: 20px;
     color: $primary-color;
     align-items: center;
@@ -42,31 +50,14 @@
 }
 
 .contacts__nav {
-    position: relative;
-    font-family: $font-montserrat;
+    display: block;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 183%;
     letter-spacing: 0.04em;
     color: $contact-text-color;
-    margin-bottom: 24px;
-    &::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        top: 0;
-        right: 0;
-        margin-top: 24px;
-        margin-bottom: 24px;
-        border-bottom: 1px solid #E1E1E1;
-
-    }
-}
-
-.contacts__work {
-    margin-top: 8px;
-    margin-bottom: 23px;
-    // border-bottom: 1px solid #E1E1E1;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1;
 }
 
 .contacts__day {
@@ -74,6 +65,9 @@
     font-size: 12px;
     line-height: 186%;
     color: $title-color;
+    &.one {
+        padding-top: 24px;
+    }
 }
 
 .contacts__time {
@@ -81,23 +75,40 @@
     font-size: 12px;
     line-height: 186%;
     color: $disabled-color;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
+    &.border {
+       padding-bottom: 24px;
+    border-bottom: 1px solid #E1E1E1; 
+    }
 }
 
 .contacts__link {
+    display: block;
     font-size: 12px;
     line-height: 18px;
     color: $contact-text-color;
-    margin-top: 24px;
+    &.nav {
+        padding-top: 24px;
+    }
 }
 
-.button-contacts {
+.contacts__button {
+    display: grid;
     justify-content: center;
+    margin-top: 32px;
 }
 
 .button {
-    display: block;
-    align-items: center;
     margin-bottom: 8px;
     @extend %button;
+    &.franch{
+        border: 2px solid $accent-color;
+        background-color: $bg-color;
+        border-color: $accent-color;
+        color: $primary-color;
+        &:hover,
+        &:focus {
+            border-color: $action-color;
+        }
+    }
 }
