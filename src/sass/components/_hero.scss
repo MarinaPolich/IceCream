@@ -1,0 +1,221 @@
+@keyframes heroimage-mobile{
+    0%{
+        transform: translate(53%, 100%);
+    }
+    100%{
+        transform: translate(53%, 17%);
+        z-index: 1;
+    }
+}
+@keyframes heroimage-tablet{
+    0%{
+        transform: translate(13%, 100%);
+    }
+    100%{
+        transform: translate(13%, 13%);
+        z-index: 1;
+    }
+}
+.flex-box--justify{
+    align-items: baseline;
+}
+
+.hero{
+    position: relative;
+    overflow: hidden;
+    background-color: $bg-color;
+    height: 450px;
+    padding: 16px;
+    @media screen and (min-width:$tablet){
+        height: auto;
+    }
+}
+.hero__title{
+    margin-bottom: 29px;
+
+    font-family: 'Seymour One';
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $white-text-color;
+    @media screen and (min-width:$tablet){
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    @media screen and (min-width:$desktop){
+        font-size: 38px;
+        margin-bottom: 19px;
+
+ 
+    }
+    
+    
+}
+.hero__accent{
+    font-size: 34px;
+    line-height: 0.96;
+    @media screen and (min-width:$tablet){
+        font-size: 16px;
+    }
+    @media screen and (min-width:$desktop){
+        font-size: 38px;
+
+ 
+    }
+
+}
+
+.hero-link-box__link{
+    display: block;
+    margin-bottom: 27px;
+
+    font-size: 8px;
+    line-height: 1.12;
+    padding: 5px 10px;
+    text-align: center;
+    
+    &:not(:last-child){
+        margin-right: 8px;
+    }
+    @media screen and (min-width:$desktop){
+        margin-bottom: 40px;
+    }
+
+    &--btn{
+        border: 2px solid $accent-color;
+        border-radius: 8px;
+        color: $title-color;
+        
+        &:hover,
+        &:focus{
+            border-color: $action-color;
+        }
+        &:active{
+            border-color: $disabled-color;
+        }
+        
+        
+    }
+
+    &--link{
+        color: $accent-color;
+        text-decoration: underline;
+        
+        &:hover,
+        &:focus{
+            color: $action-color;
+        }
+        &:active{
+            color: $disabled-color;
+        }
+    }
+}
+
+.hero-offer{
+    display: none;
+
+    @media screen and (min-width:$tablet){
+        display: flex;
+        align-items: center;
+        
+    }
+    @media screen and (min-width:$desktop){
+        margin-bottom: 63px;
+    }
+}
+.hero-offer__img{
+    margin-right: 35px;
+    z-index: 1;
+}
+.hero-offer__description{
+    width: 150px;
+
+    @media screen and (min-width:$desktop){
+        width: 200px;
+    }
+    
+}
+.hero-offer__text{
+    color: $white-text-color;
+    font-size: 12px;
+    line-height: 1.4;
+
+    @media screen and (min-width:$desktop){
+        font-size: 14px;;
+    }
+}
+.hero-offer__icon{
+    fill: $white-text-color;
+}
+
+.hero-right{
+    display: none;
+
+    @media screen and (min-width:$tablet){
+        display: block;
+        margin-left: auto;
+        text-align: right;
+    }
+    
+}
+.hero-right__text{
+    font-size: 8px;
+    line-height: 1.25;
+    color: $white-text-color;
+    &--big{
+        font-weight: 900;
+        font-size: 28px;
+
+        letter-spacing: 0.04em;
+        color: $title-color;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.img-hero{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateY(100%);
+    
+ 
+    animation-name: heroimage-mobile;
+    animation-duration: 250ms;
+    animation-timing-function: $timing-function;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    z-index: -1;
+
+    @media screen and(min-width:$tablet){
+        animation-name: heroimage-tablet;
+        right: 10%;
+
+    }
+}
+.hero-decor__dots{
+    position: absolute;
+    bottom: 0;
+}
+.hero-decor__dots--left{
+    left: 0;
+}
+.hero-decor__dots--right{
+    right: 0;
+}
