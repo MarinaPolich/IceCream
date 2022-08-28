@@ -1,28 +1,68 @@
+.feature {
+    background-color: $bg-color;
+    padding-top: 20px;
+    margin-top: -200px;
+}
+
+
+
 .feature__contacts {
     justify-content: center;
     align-items: center;
-    background-color: $bg-color;  
-
- }
+}
 
 .contacts__set {
+
+    @media screen and (max-width: $mobile) {
+        margin-top: px;
+
+    }
    
     @media screen and (min-width: $tablet) {
         display: flex;
         flex-wrap: wrap;
+        margin: -8px;
+        margin-top: -300px;  
     } 
+
+    @media screen and (min-width: $desktop) {
+        margin: -16px;
+        margin-top: -170px;
+    }
 }
 
 .contact {
+    display: block;
     padding: 40px 32px;
     margin-bottom: 20px;
     width: 100%;
     background: $primary-color;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
-    
-    
+
+    // @media screen and (min-width: $mobile) {
+    //     margin-top: -30px; 
+    //     margin-bottom: 20px;
+    // }
+
+    @media screen and (min-width: $tablet) {
+        width: calc((100% - 3 * 16px) / 3);
+        margin: 8px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: calc((100% - 3 * 32px) / 3);
+        margin: 16px;  
+    } 
 }
+
+.contact.lid {
+    @media screen and (max-width: $tablet) {
+        margin-top: -300px;
+    }
+}
+    
+    
 
 .contacts__label {
     display: inline-block;
@@ -36,7 +76,15 @@
     align-items: center;
     text-align: center;
     background: $accent-color;
-    border-radius: 4px
+    border-radius: 4px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px; 
+    }
 }
 
 .contacts__city {
@@ -47,17 +95,34 @@
     letter-spacing: 0.04em;
     margin-bottom: 8px;
     color: $title-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px; 
+    } 
 }
+
 
 .contacts__nav {
     display: block;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 183%;
     letter-spacing: 0.04em;
     color: $contact-text-color;
     padding-bottom: 24px;
     border-bottom: 1px solid #E1E1E1;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px; 
+    } 
 }
 
 .contacts__day {
@@ -80,6 +145,14 @@
        padding-bottom: 24px;
     border-bottom: 1px solid #E1E1E1; 
     }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px; 
+    }
 }
 
 .contacts__link {
@@ -90,25 +163,85 @@
     &.nav {
         padding-top: 24px;
     }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px; 
+    }
 }
 
 .contacts__button {
     display: grid;
     justify-content: center;
     margin-top: 32px;
+    @media screen and (min-width: $tablet) {
+        display: flex;
+    }
 }
 
-.button {
+.button-contacts {
+    display: block;
+    text-align: center;
+
+    padding: 12px 33px;
+    border-radius: 10px;
+
+    font-family: $font-montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+
+    cursor: pointer;
     margin-bottom: 8px;
-    @extend %button;
-    &.franch{
-        border: 2px solid $accent-color;
-        background-color: $bg-color;
-        border-color: $accent-color;
-        color: $primary-color;
-        &:hover,
-        &:focus {
-            border-color: $action-color;
-        }
+    margin-bottom: 8px;
+
+    background-color: $accent-color;
+    color: $title-color;
+    border: none;
+
+    @media screen and (min-width: $tablet) {
+        margin-right: 18px;
     }
+
+    &:hover,
+    &:focus {
+        background-color: $action-color;
+    }
+}
+
+.button-franch {
+    display: block;
+    text-align: center;
+
+    padding: 12px 33px;
+    border-radius: 10px;
+
+    font-family: $font-montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+
+    cursor: pointer;
+    margin-bottom: 8px;
+    
+    color: #E1E1E1;
+    border: 2px solid #F8D24E;
+    background: #84A178;
+    &:hover,
+    &:focus {
+        background: #84A178;
+        border: 2px solid #0A8817;
+    }
+}
+
+.vector {
+    vertical-align: middle;
+}
+
+.vector-two {
+    fill: white;
+    vertical-align: middle;
 }
