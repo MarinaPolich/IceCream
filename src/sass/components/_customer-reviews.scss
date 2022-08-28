@@ -49,6 +49,21 @@ padding-bottom: 359px;
         padding-top: 452px;
         padding-bottom: 207px;
     }
+
+    button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $title-color;
+      font-size: 0;
+      border: none;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #84a178;
+        transform: scale(1.4);
+      }
+    }
 }
 
 .review__img-wrapper {
@@ -112,17 +127,4 @@ li {
     margin-right: 18px;
   }
 }
-button {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: $title-color;
-  font-size: 0;
-  border: none;
-  &:hover,
-  &:focus,
-  &:active {
-    background-color: #84a178;
-    transform: scale(1.4);
-  }
-}
+
