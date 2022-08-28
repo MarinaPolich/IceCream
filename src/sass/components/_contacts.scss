@@ -76,7 +76,15 @@
     align-items: center;
     text-align: center;
     background: $accent-color;
-    border-radius: 4px
+    border-radius: 4px;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px; 
+    }
 }
 
 .contacts__city {
@@ -87,17 +95,34 @@
     letter-spacing: 0.04em;
     margin-bottom: 8px;
     color: $title-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px; 
+    } 
 }
+
 
 .contacts__nav {
     display: block;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 183%;
     letter-spacing: 0.04em;
     color: $contact-text-color;
     padding-bottom: 24px;
     border-bottom: 1px solid #E1E1E1;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px; 
+    } 
 }
 
 .contacts__day {
@@ -120,6 +145,14 @@
        padding-bottom: 24px;
     border-bottom: 1px solid #E1E1E1; 
     }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px; 
+    }
 }
 
 .contacts__link {
@@ -129,6 +162,14 @@
     color: $contact-text-color;
     &.nav {
         padding-top: 24px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px; 
     }
 }
 
