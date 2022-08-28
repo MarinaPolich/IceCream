@@ -1,4 +1,4 @@
-.feature__products {
+npm .feature__products {
     background-image: url(../images/bgmob.png);
     background-size: cover;
     background-repeat: repeat;
@@ -121,7 +121,7 @@
     // }
 }
 
-.one {    
+.one-ice {    
     background-color: #AEC6A5; 
     &::before {
         position: absolute;
@@ -160,7 +160,7 @@
 } 
 
 @media screen and (min-width: $tablet) {
-    .one::after {
+    .one-ice::after {
         background-image: url(../images/prod1tab.jpg);
         
         @media (min-device-pixel-ratio: 2),
@@ -172,12 +172,12 @@
 }
     
 @media screen and (min-width: $desktop) {
-    .one::before {
+    .one-ice::before {
         width: 300px;
         height: 300px;
         transform: translate(-50%, -120%);
     }
-    .one::after {
+    .one-ice::after {
         width: 300px;
         height: 300px;
         transform: translate(-50%, -30%);
@@ -191,7 +191,7 @@
     }   
 }
 
-.two {    
+.two-ice {    
     background-color: #EFD478; 
     &::before {
         position: absolute;
@@ -230,7 +230,7 @@
 } 
 
 @media screen and (min-width: $tablet) {
-    .two::after {
+    .two-ice::after {
         background-image: url(../images/prod2tab.jpg);
         
         @media (min-device-pixel-ratio: 2),
@@ -242,12 +242,12 @@
 }
     
 @media screen and (min-width: $desktop) {
-    .two::before {
+    .two-ice::before {
         width: 300px;
         height: 300px;
         transform: translate(-50%, -120%);
     }
-    .two::after {
+    .two-ice::after {
         width: 300px;
         height: 300px;
         transform: translate(-50%, -30%);
@@ -260,7 +260,7 @@
     }   
 }
 
-.three {    
+.three-ice {    
     background-color: #D6936D; 
     &::before {
         position: absolute;
@@ -299,7 +299,7 @@
 } 
 
 @media screen and (min-width: $tablet) {
-    .three::after {
+    .three-ice::after {
         background-image: url(../images/prod3tab.jpg);
         
         @media (min-device-pixel-ratio: 2),
@@ -311,12 +311,12 @@
 }
     
 @media screen and (min-width: $desktop) {
-    .three::before {
+    .three-ice::before {
         width: 300px;
         height: 300px;
         transform: translate(-50%, -120%);
     }
-    .three::after {
+    .three-ice::after {
         width: 300px;
         height: 300px;
         transform: translate(-50%, -30%);
