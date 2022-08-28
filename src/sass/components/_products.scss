@@ -71,6 +71,7 @@
 
 .products-list {
   color: $text-color;
+
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
@@ -87,14 +88,27 @@
   text-transform: uppercase;
   margin-bottom: 40px;
 
+  color: $text-color;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.22;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 40px;
+    font-size: 22px;
+  }
+
   @media screen and (min-width: $desktop) {
     margin-bottom: 65px;
+    font-size: 30px;
+    line-height: 1.23;
   }
 }
 
 .products-list__card {
-  height: 420px;
   position: relative;
+  height: 420px;
   padding-top: 123px;
   padding-left: 40px;
   padding-right: 40px;
@@ -133,6 +147,17 @@
 
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
     border-radius: 50%;
+
+
+    @media screen and (min-width: $tablet) {
+        transform: translate(-50%, -160%);
+    }
+    
+    @media screen and (min-width: $desktop) {
+        width: 300px;
+        height: 300px;
+        transform: translate(-50%, -140%);
+    }
   }
 
   &::after {
@@ -148,65 +173,35 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
 
-  @media screen and (min-width: $tablet) {
-    .one-ice::before {
-      transform: translate(-50%, -150%);
+
+    @media screen and (min-width: $tablet) {
+        transform: translate(-50%, -65%);
     }
-    .one-ice::after {
-      transform: translate(-50%, -60%);
+    
+    @media screen and (min-width: $desktop) {
+        width: 300px;
+        height: 300px;
+        transform: translate(-50%, -45%);
     }
   }
-  
-  @media screen and (min-width: $desktop) {
-    .one-ice::before {
-      width: 300px;
-      height: 300px;
-      transform: translate(-50%, -118%);
-    }
-    .one-ice::after {
-      width: 300px;
-      height: 300px;
-      transform: translate(-50%, -25%);
-    }
 }
+
 
 .one-ice {
   background-color: #aec6a5;
 
   &::before {
-    // position: absolute;
-    // content: '';
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -150%);
-    // width: 200px;
-    // height: 200px;
     background-color: linear-gradient(
         0deg,
         rgba(156, 190, 143, 0.7),
         rgba(156, 190, 143, 0.7)
       ),
       #d9d9d9;
-    // box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
-    // border-radius: 50%;
   }
 
   &::after {
-    // position: absolute;
-    // content: '';
-    // width: 200px;
-    // height: 200px;
-    // bottom: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -55%);
-    // border-radius: 50%;
-    // border-radius: 50%;
     background-image: url(../images/prod1mob.jpg);
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -217,11 +212,7 @@
 }
 
 @media screen and (min-width: $tablet) {
-  // .one-ice::before {
-  //   transform: translate(-50%, -150%);
-  // }
   .one-ice::after {
-    // transform: translate(-50%, -60%);
     background-image: url(../images/prod1tab.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -233,15 +224,7 @@
 }
 
 @media screen and (min-width: $desktop) {
-  // .one-ice::before {
-  //   width: 300px;
-  //   height: 300px;
-  //   transform: translate(-50%, -118%);
-  // }
   .one-ice::after {
-    // width: 300px;
-    // height: 300px;
-    // transform: translate(-50%, -25%);
     background-image: url(../images/prod1desk.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -255,37 +238,16 @@
 .two-ice {
   background-color: #efd478;
   &::before {
-    // position: absolute;
-    // content: '';
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -130%);
-    // width: 200px;
-    // height: 200px;
     background-color: linear-gradient(
         0deg,
         rgba(248, 210, 78, 0.7),
         rgba(248, 210, 78, 0.7)
       ),
       #d9d9d9;
-    // box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-    // border-radius: 50%;
   }
 
   &::after {
-    // position: absolute;
-    // content: '';
-    // width: 200px;
-    // height: 200px;
-    // bottom: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -40%);
-    // border-radius: 50%;
-    // border-radius: 50%;
     background-image: url(../images/prod2mob.jpg);
-    // background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -296,11 +258,7 @@
 }
 
 @media screen and (min-width: $tablet) {
-  // .two-ice::before {
-  //   transform: translate(-50%, -150%);
-  // }
   .two-ice::after {
-    // transform: translate(-50%, -60%);
     background-image: url(../images/prod2tab.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -312,16 +270,9 @@
 }
 
 @media screen and (min-width: $desktop) {
-  // .two-ice::before {
-  //   width: 300px;
-  //   height: 300px;
-  //   transform: translate(-50%, -118%);
-  // }
   .two-ice::after {
-    // width: 300px;
-    // height: 300px;
-    // transform: translate(-50%, -25%);
     background-image: url(../images/prod2desk.jpg);
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -333,37 +284,16 @@
 .three-ice {
   background-color: #d6936d;
   &::before {
-    // position: absolute;
-    // content: '';
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -130%);
-    // width: 200px;
-    // height: 200px;
     background-color: linear-gradient(
         0deg,
         rgba(213, 117, 63, 0.7),
         rgba(213, 117, 63, 0.7)
       ),
       #d9d9d9;
-    // box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-    // border-radius: 50%;
   }
 
   &::after {
-    // position: absolute;
-    // content: '';
-    // width: 200px;
-    // height: 200px;
-    // bottom: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -40%);
-    // border-radius: 50%;
-    // border-radius: 50%;
     background-image: url(../images/prod3mob.jpg);
-    background-repeat: no-repeat;
-    // background-position: center;
-    // background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -374,12 +304,7 @@
 }
 
 @media screen and (min-width: $tablet) {
-  // .three-ice::before {
-  //   transform: translate(-50%, -150%);
-  // }
-
   .three-ice::after {
-    // transform: translate(-50%, -60%);
     background-image: url(../images/prod3tab.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -391,16 +316,9 @@
 }
 
 @media screen and (min-width: $desktop) {
-  // .three-ice::before {
-  //   width: 300px;
-  //   height: 300px;
-  //   transform: translate(-50%, -118%);
-  // }
   .three-ice::after {
-    // width: 300px;
-    // height: 300px;
-    // transform: translate(-50%, -25%);
     background-image: url(../images/prod3desk.jpg);
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -409,22 +327,16 @@
   }
 }
 
-.products-list__title {
-  margin-top: 20px;
-  margin-bottom: 40px;
-
-  color: $text-color;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
 
 .products-list__text {
   text-align: center;
 
   color: $text-color;
   text-align: center;
+  
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+  }
 }
 
 .button {
@@ -442,5 +354,9 @@
 
   &.last-product {
     background-color: #d6936d;
+  }
+
+  @media screen and (min-width: $desktop) {
+    bottom: 60px;
   }
 }
