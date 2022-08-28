@@ -11,7 +11,7 @@
     padding-bottom: 16px;  
     overflow: hidden;
 
-    z-index: -1;
+
 }
 
 .logo{
@@ -90,31 +90,14 @@
     
     display: none;
     cursor: pointer;
-
+    @extend %button;
     @media screen and(min-width:$tablet){
         display: block;
-        width: 150px;
-        padding: 12px 0;
-
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 1.2;
-        text-align: center;
-
-        border-radius: 10px;
-        border: none;
-
-        background-color: $accent-color;
 
         
+        
     }
-    &:hover,
-    &:focus{
-        background-color: $action-color;
-    }
-    &:active{
-        background-color: $disabled-color;
-    }
+
 }
 
 .buy-btn__icon{
