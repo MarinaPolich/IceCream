@@ -50,6 +50,16 @@ body {
     font-size: 30px;
     line-height: 1.26;
     text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 34px;
+      }
+    
+      @media screen and (min-width: $desktop) {
+        font-size: 36px;
+        line-height: 1.26;
+        letter-spacing: 0.06em;
+      }
 }
 
 .section__label {
@@ -60,4 +70,14 @@ body {
     font-size: 18px;
     line-height: 1.22;
     text-transform: uppercase;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 22px;
+        line-height: 1.23;
+      }
+    
+      @media screen and (min-width: $desktop) {
+        font-size: 30px;
+        line-height: 1.23;
+      }
 }

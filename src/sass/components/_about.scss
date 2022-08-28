@@ -1,14 +1,15 @@
 .about.section {
   font-family: $font-montserrat;
   background-color: $bg-color;
+  padding-bottom: 40px;
 
-  @media screen and (max-width: $desktop) {
+  @media screen and (min-width: $tablet) {
     padding-bottom: 60px;
     
   }
 
   @media screen and (min-width: $desktop) {
-    padding-bottom: 50px;
+    padding-bottom: 123px;
     
   }
 }
@@ -36,6 +37,14 @@
   color: $primary-color;
   @media screen and(max-width:$mobile) {
     width: 200px;
+  }
+
+  @media screen and(min-width:$tablet) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and(min-width:$desktop) {
+    margin-bottom: 82px;
   }
 }
 

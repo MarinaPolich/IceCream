@@ -1,9 +1,19 @@
-.feature__products {
+.section.feature__products {
   background-image: url(../images/bgmob.png);
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
   background-size: cover;
+
+  padding-bottom: 80px;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 82px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 66px;
+  }
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -40,30 +50,15 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  padding-bottom: 60px;
 }
 
 .section__label-product {
   color: $title-color;
-  margin-top: 50px;
-  text-align: center;
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 1.22;
-  margin-bottom: 12px;
-  text-align: center;
-  margin-bottom: 12px;
-  text-transform: uppercase;
 }
 
 .section__title-product {
-  text-align: center;
-  font-family: $font-seymour-one;
-  font-size: 30px;
-  line-height: 1.26;
-  text-transform: uppercase;
+  margin-bottom: 148px;
   color: $title-color;
-  text-transform: uppercase;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 200px;
@@ -91,46 +86,51 @@
   color: $text-color;
   text-transform: uppercase;
   margin-bottom: 40px;
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 65px;
+  }
 }
 
 .products-list__card {
+  height: 420px;
   position: relative;
   padding-top: 123px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 20px;
   margin-top: 148px;
   text-align: center;
   border-radius: 24px;
 
   @media screen and (min-width: $tablet) and (max-width: $desktop) {
     width: calc((100% - 3 * 16px) / 3);
+    height: 428px;
+    padding-top: 107px;
+    padding-right: 26px;
+    padding-left: 26px;
     margin: 8px;
   }
 
   @media screen and (min-width: $desktop) {
     width: calc((100% - 3 * 32px) / 3);
+    height: 535px;
     margin: 16px;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-top: 165px;
+    padding-right: 63px;
+    padding-left: 63px;
+    padding-bottom: 60px;
   }
-}
 
-.one-ice {
-  background-color: #aec6a5;
   &::before {
     position: absolute;
     content: '';
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -130%);
+    transform: translate(-50%, -150%);
     width: 200px;
     height: 200px;
-    background-color: linear-gradient(
-        0deg,
-        rgba(156, 190, 143, 0.7),
-        rgba(156, 190, 143, 0.7)
-      ),
-      #d9d9d9;
+
     box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
     border-radius: 50%;
   }
@@ -142,13 +142,71 @@
     height: 200px;
     bottom: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -55%);
     border-radius: 50%;
     border-radius: 50%;
-    background-image: url(../images/prod1mob.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+
+  @media screen and (min-width: $tablet) {
+    .one-ice::before {
+      transform: translate(-50%, -150%);
+    }
+    .one-ice::after {
+      transform: translate(-50%, -60%);
+    }
+  }
+  
+  @media screen and (min-width: $desktop) {
+    .one-ice::before {
+      width: 300px;
+      height: 300px;
+      transform: translate(-50%, -118%);
+    }
+    .one-ice::after {
+      width: 300px;
+      height: 300px;
+      transform: translate(-50%, -25%);
+    }
+}
+
+.one-ice {
+  background-color: #aec6a5;
+
+  &::before {
+    // position: absolute;
+    // content: '';
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -150%);
+    // width: 200px;
+    // height: 200px;
+    background-color: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7),
+        rgba(156, 190, 143, 0.7)
+      ),
+      #d9d9d9;
+    // box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+    // border-radius: 50%;
+  }
+
+  &::after {
+    // position: absolute;
+    // content: '';
+    // width: 200px;
+    // height: 200px;
+    // bottom: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -55%);
+    // border-radius: 50%;
+    // border-radius: 50%;
+    background-image: url(../images/prod1mob.jpg);
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -159,11 +217,11 @@
 }
 
 @media screen and (min-width: $tablet) {
-  .one-ice::before {
-    transform: translate(-50%, -150%);
-  }
+  // .one-ice::before {
+  //   transform: translate(-50%, -150%);
+  // }
   .one-ice::after {
-    transform: translate(-50%, -60%);
+    // transform: translate(-50%, -60%);
     background-image: url(../images/prod1tab.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -175,15 +233,15 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .one-ice::before {
-    width: 300px;
-    height: 300px;
-    transform: translate(-50%, -118%);
-  }
+  // .one-ice::before {
+  //   width: 300px;
+  //   height: 300px;
+  //   transform: translate(-50%, -118%);
+  // }
   .one-ice::after {
-    width: 300px;
-    height: 300px;
-    transform: translate(-50%, -25%);
+    // width: 300px;
+    // height: 300px;
+    // transform: translate(-50%, -25%);
     background-image: url(../images/prod1desk.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -197,37 +255,37 @@
 .two-ice {
   background-color: #efd478;
   &::before {
-    position: absolute;
-    content: '';
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -130%);
-    width: 200px;
-    height: 200px;
+    // position: absolute;
+    // content: '';
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -130%);
+    // width: 200px;
+    // height: 200px;
     background-color: linear-gradient(
         0deg,
         rgba(248, 210, 78, 0.7),
         rgba(248, 210, 78, 0.7)
       ),
       #d9d9d9;
-    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-    border-radius: 50%;
+    // box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+    // border-radius: 50%;
   }
 
   &::after {
-    position: absolute;
-    content: '';
-    width: 200px;
-    height: 200px;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    border-radius: 50%;
-    border-radius: 50%;
+    // position: absolute;
+    // content: '';
+    // width: 200px;
+    // height: 200px;
+    // bottom: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -40%);
+    // border-radius: 50%;
+    // border-radius: 50%;
     background-image: url(../images/prod2mob.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -238,11 +296,11 @@
 }
 
 @media screen and (min-width: $tablet) {
-  .two-ice::before {
-    transform: translate(-50%, -150%);
-  }
+  // .two-ice::before {
+  //   transform: translate(-50%, -150%);
+  // }
   .two-ice::after {
-    transform: translate(-50%, -60%);
+    // transform: translate(-50%, -60%);
     background-image: url(../images/prod2tab.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -254,15 +312,15 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .two-ice::before {
-    width: 300px;
-    height: 300px;
-    transform: translate(-50%, -118%);
-  }
+  // .two-ice::before {
+  //   width: 300px;
+  //   height: 300px;
+  //   transform: translate(-50%, -118%);
+  // }
   .two-ice::after {
-    width: 300px;
-    height: 300px;
-    transform: translate(-50%, -25%);
+    // width: 300px;
+    // height: 300px;
+    // transform: translate(-50%, -25%);
     background-image: url(../images/prod2desk.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -275,37 +333,37 @@
 .three-ice {
   background-color: #d6936d;
   &::before {
-    position: absolute;
-    content: '';
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -130%);
-    width: 200px;
-    height: 200px;
+    // position: absolute;
+    // content: '';
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -130%);
+    // width: 200px;
+    // height: 200px;
     background-color: linear-gradient(
         0deg,
         rgba(213, 117, 63, 0.7),
         rgba(213, 117, 63, 0.7)
       ),
       #d9d9d9;
-    box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
+    // box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+    // border-radius: 50%;
   }
 
   &::after {
-    position: absolute;
-    content: '';
-    width: 200px;
-    height: 200px;
-    bottom: 50%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-    border-radius: 50%;
-    border-radius: 50%;
+    // position: absolute;
+    // content: '';
+    // width: 200px;
+    // height: 200px;
+    // bottom: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -40%);
+    // border-radius: 50%;
+    // border-radius: 50%;
     background-image: url(../images/prod3mob.jpg);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    // background-position: center;
+    // background-size: cover;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -316,12 +374,12 @@
 }
 
 @media screen and (min-width: $tablet) {
-  .three-ice::before {
-    transform: translate(-50%, -150%);
-  }
+  // .three-ice::before {
+  //   transform: translate(-50%, -150%);
+  // }
 
   .three-ice::after {
-    transform: translate(-50%, -60%);
+    // transform: translate(-50%, -60%);
     background-image: url(../images/prod3tab.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -333,15 +391,15 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .three-ice::before {
-    width: 300px;
-    height: 300px;
-    transform: translate(-50%, -118%);
-  }
+  // .three-ice::before {
+  //   width: 300px;
+  //   height: 300px;
+  //   transform: translate(-50%, -118%);
+  // }
   .three-ice::after {
-    width: 300px;
-    height: 300px;
-    transform: translate(-50%, -25%);
+    // width: 300px;
+    // height: 300px;
+    // transform: translate(-50%, -25%);
     background-image: url(../images/prod3desk.jpg);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -370,6 +428,10 @@
 }
 
 .button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   margin-top: 30px;
   border: none;
   cursor: pointer;
