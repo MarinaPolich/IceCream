@@ -54,7 +54,7 @@ padding-bottom: 359px;
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background-color: $title-color;
+      background-color: $disabled-color;
       font-size: 0;
       border: none;
       &:hover,
@@ -81,11 +81,11 @@ padding-bottom: 359px;
    
     border-radius: 10px;
         background-color: $bg-color;
-        background-image: repeating-linear-gradient(to bottom, $bg-color, $bg-color 29px, $primary-color 29px, $primary-color 31px);
+        background-image: repeating-linear-gradient(to bottom, $bg-color, $bg-color 30px, $primary-color 30px, $primary-color 31px);
         margin: 32px auto;
         max-height: 308px;
         padding: 43px 50px 17px;
-        max-width: 480px;
+        max-width: 280px;
   line-height: 2.55;
   text-align: center;
   color: $primary-color;
@@ -120,11 +120,11 @@ padding-bottom: 359px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 207px;
+  & li {
+      &:not(:last-child) {
+        margin-right: 18px;
+      }
+    }
 }
-li {
-  &:not(:last-child) {
-    margin-right: 18px;
-  }
-}
+
 
