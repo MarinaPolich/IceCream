@@ -64,6 +64,12 @@ padding-bottom: 359px;
         transform: scale(1.4);
       }
     }
+
+    li {
+      &:not(:last-child) {
+        margin-right: 18px;
+      }
+    }
 }
 
 .review__img-wrapper {
@@ -122,9 +128,5 @@ padding-bottom: 359px;
   align-items: center;
   margin-bottom: 207px;
 }
-li {
-  &:not(:last-child) {
-    margin-right: 18px;
-  }
-}
+
 
