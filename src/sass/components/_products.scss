@@ -369,16 +369,40 @@
   text-align: center;
 }
 
-.button {
-  margin-top: 30px;
+.button-icon__product {
+  position: absolute;
+}
+
+.button-product {
   border: none;
   cursor: pointer;
-  background-color: #aec6a5;
-  &.product {
-    background-color: #efd478;
+  &.creem {
+    background-color: #aec6a5;
+    margin-top: 20px;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 50px;
+    }
   }
 
-  &.last-product {
-    background-color: #d6936d;
+  &.cofee {
+    background-color: #efd478;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 10px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      margin-top: 30px;
+    }
   }
+
+  &.milk {
+    background-color: #d6936d;
+
+    @media screen and (min-width: $tablet) {
+      margin-top: 30px;
+    }
+  }
+
 }
