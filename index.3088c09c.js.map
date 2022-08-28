@@ -1,1 +1,0 @@
-{"mappings":"AAAAA,EAAE,WAAWC,MAAM,CAEfC,UAAU,EACVC,MAAM,EACNC,QAAO,EACPC,aAAc","sources":["src/index.js"],"sourcesContent":["$('.slider').slick({\n  // normal options...\n    infinite: false,\n    dots: true,\n    arrows:false,\n    slidesToShow: 1,\n\n\n});\n"],"names":["$","slick","infinite","dots","arrows","slidesToShow"],"version":3,"file":"index.3088c09c.js.map"}
