@@ -27,6 +27,9 @@
     font-size: 14px;
     line-height: 1.29;
 
+    transition: background-color 250ms linear, 
+    color 250ms linear,
+    border 250ms linear;
     cursor: pointer;
 
     &:hover,
