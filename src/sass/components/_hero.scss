@@ -140,12 +140,13 @@
             border-color: $disabled-color;
         }
         
-        
+        transition: all 250ms linear, 
     }
 
     &--link{
         color: $accent-color;
         text-decoration: underline;
+        transition: all 250ms linear;
         
         &:hover,
         &:focus{

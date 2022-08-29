@@ -69,10 +69,8 @@
         }
     }
     @media screen and (max-width:$desktop){
-        
-            padding-bottom: 32px;
-            
-        
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
 }
@@ -97,6 +95,7 @@
 
         font-size: 16px;
     }
+    transition: all 250ms linear, 
 }
 
 .btn-box{
@@ -144,4 +143,8 @@
 
 .menu-btn.js-close-menu {
     margin-right: 0;
+}
+
+.menu-btn__icon {
+    fill: $primary-color;
 }
