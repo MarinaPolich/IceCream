@@ -12,17 +12,15 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, -24px);
-    width: calc(100% - 0px);
+    width: 100%;
     max-width: 279px;
-    
-
-
-  @media screen and (min-width: 768px) {
+  
+  @media screen and (min-width: $tablet) {
     max-width: 704px;
     transform: translate(-50%, -164px);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     transform: translate(-50%, -98px);
     max-width: 1013px;
   }

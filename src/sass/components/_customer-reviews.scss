@@ -48,6 +48,8 @@
       background-color: #D9D9D9;
       font-size: 0;
       border: none;
+      transition: background-color 500ms linear;
+      cursor: pointer;
       &:hover,
       &:focus,
       &:active {
@@ -112,8 +114,8 @@
     }
   }
 }
-.review__name,
-.review__name--cite {
+.review__name {
+  display: block;
   font-style: normal;
   line-height: 1.86;
   text-align: center;
