@@ -274,9 +274,12 @@
 .about__button {
   margin-top: 20px;
   @extend %button;
+  align-items: center;
+  transition: background-color 250ms linear;
+  
 }
 
-.element {
-  transform: translateY(1px);
-  margin-left: 14px;
-}
+
+
+
+   
