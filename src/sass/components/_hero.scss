@@ -54,18 +54,19 @@
     background-color: $bg-color;
     height: 450px;
     padding: 16px;
+    padding-top: 95px;
     @media screen and (min-width:$tablet){
         height: auto;
     }
     @media screen and (min-width:$desktop){
-        padding-top: 25px;
+        padding-top: 100px;
         padding-bottom: 60px;
     }
 }
 .hero-left{
 
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 .hero__title{
     margin-bottom: 29px;
