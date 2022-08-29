@@ -1,3 +1,7 @@
+.section.gallery {
+  padding-top: 0;
+}
+
 .gallery__container {
     position: relative;
 }
@@ -14,7 +18,7 @@
 
   @media screen and (min-width: 768px) {
     max-width: 704px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -164px);
   }
 
   @media screen and (min-width: 1200px) {

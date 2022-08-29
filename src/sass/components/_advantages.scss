@@ -2,8 +2,16 @@
   font-family: $font-montserrat;
   background-color: $bg-color;
   color: $primary-color;
-  padding-bottom: 150px;
+  padding-bottom: 64px;
   padding-top: 0;
+
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 204px;
+  }
+  
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 209px;
+  }
 }
 
 .advantages {
