@@ -3,7 +3,7 @@
         <a href="./index.html" class="logo">
             <img class="logo-img" src="../src/images/logo.png" alt="">
         </a>
-        <nav class="navi">
+        <nav class="navi js-menu-container">
             <ul class="navi__list">
                 <li class="navi__item"><a class="navi__link" href="./index.html">Home</a></li>
                 <li class="navi__item"><a class="navi__link" href="#about">About us</a></li>
@@ -13,9 +13,14 @@
             </ul>
         </nav>
         <div class="btn-box">
-            <button class="menu-btn" type="button">
+            <button class="menu-btn js-open-menu" type="button">
                 <svg class="menu-btn__icon" width="20" height="20">
                     <use href="./images/symbol-defs.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <button class="menu-btn js-close-menu is-hiden-btn" type="button">
+                <svg class="menu-btn__icon" width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-ep-close"></use>
                 </svg>
             </button>
             <button class="buy-btn" type="button">Buy now
