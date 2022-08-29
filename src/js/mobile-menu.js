@@ -19,10 +19,10 @@
       buyBtn.classList.remove('is-hiden-btn');
     }
 
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
+    // const scrollLockMethod = !isMenuOpen
+    //   ? 'disableBodyScroll'
+    //   : 'enableBodyScroll';
+    // bodyScrollLock[scrollLockMethod](document.body);
   };
 
   openMenuBtn.addEventListener('click', toggleMenu);
@@ -36,6 +36,6 @@
     closeMenuBtn.classList.add('is-hiden-btn');
     buyBtn.classList.remove('is-hiden-btn');
     openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
+    // bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
