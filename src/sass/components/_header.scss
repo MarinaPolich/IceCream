@@ -129,12 +129,18 @@
     @media screen and(min-width:$tablet){
         display: block;
 
-        
-        
     }
 
 }
 
 .buy-btn__icon{
     vertical-align: middle;
+}
+
+.is-hiden-btn {
+    display: none;
+}
+
+.menu-btn.js-close-menu {
+    margin-right: 0;
 }
