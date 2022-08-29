@@ -5,12 +5,10 @@
 
   @media screen and (min-width: $tablet) {
     padding-bottom: 60px;
-    
   }
 
   @media screen and (min-width: $desktop) {
-    padding-bottom: 123px;
-    
+    padding-bottom: 50px;
   }
 }
 
@@ -33,18 +31,22 @@
   font-size: 30px;
   line-height: 1.26;
   letter-spacing: 0.04em;
-  margin-bottom: 32px;
+  margin-bottom: 82px;
   color: $primary-color;
-  @media screen and(max-width:$mobile) {
+  @media screen and(max-width: $mobile) {
+    margin-bottom: 32px;
     width: 200px;
   }
 
-  @media screen and(min-width:$tablet) {
+
+  @media screen and (min-width: $tablet) {
     margin-bottom: 40px;
+    
   }
 
-  @media screen and(min-width:$desktop) {
-    margin-bottom: 82px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 100px;
+
   }
 }
 
@@ -52,12 +54,13 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     column-gap: 35px;
   }
 
   @media screen and (min-width: 1200px) {
-    column-gap: 100px;
+    // column-gap: 100px;
+    align-items: center;
   }
 }
 
@@ -71,6 +74,7 @@
   }
 
   @media screen and (min-width: $desktop) {
+    
   }
 
   @media screen and (max-width: $mobile) {
@@ -84,8 +88,6 @@
   line-height: 1.75;
   letter-spacing: 0.04em;
   color: $primary-color;
-
-  //   margin-right: auto;
 
   @media screen and (min-width: 320px) and (max-width: 330px) {
     max-width: 220px;
@@ -106,6 +108,10 @@
     &:not(:last-child) {
       margin-bottom: 14px;
     }
+
+    &:nth-child(1) {
+        padding-top: 39px;
+    }
   }
   &--hidden {
     @media screen and (max-width: $tablet) {
@@ -124,16 +130,35 @@
 
   @media screen and (min-width: 1200px) {
     max-width: 463px;
-
-    &:nth-child(3) {
-      margin-top: 20px;
-    }
-
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.76;
 
     letter-spacing: 0.04em;
+
+     &:nth-child(2) {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.94;
+      
+
+      letter-spacing: 0.04em;
+    }
+
+
+
+    &:nth-child(3) {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 1.94;
+      
+
+      letter-spacing: 0.04em;
+    }
+
+    // font-size: 16px;
+    // line-height: 1.76;
+
+    // letter-spacing: 0.04em;
   }
 }
 
@@ -175,8 +200,12 @@
   }
 
   @media screen and (min-width: 1200px) {
-    width: 490px;
-    height: 490px;
+    width: 500px;
+    height: 500px;
+    top: -23px;
+    left: 1px;
+    transform: translateX(-11%);
+
   }
 }
 
@@ -195,7 +224,7 @@
 
   @media screen and(max-width: $tablet) {
     background-image: url(../images/cow-mob-1x.png);
-    // max-width: 480px;
+    
     width: 278.19px;
     height: 278.19px;
     background-size: 278.19px 278.19px;
@@ -230,6 +259,10 @@
     height: 490px;
     background-size: 490px 490px;
 
+   top: 21px;
+   left: 0px;
+   transform: translateX(-11%);
+
     @media screen and(min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
@@ -244,6 +277,6 @@
 }
 
 .element {
-    transform: translateY(1px);
-    margin-left: 14px;
+  transform: translateY(1px);
+  margin-left: 14px;
 }
