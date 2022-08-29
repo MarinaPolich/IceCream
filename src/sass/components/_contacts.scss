@@ -77,6 +77,7 @@
     text-align: center;
     background: $accent-color;
     border-radius: 4px;
+    text-transform: uppercase;
 
     @media screen and (min-width: $tablet) {
         font-size: 14px;
@@ -115,6 +116,8 @@
     color: $contact-text-color;
     padding-bottom: 24px;
     border-bottom: 1px solid #E1E1E1;
+    transition: color 250ms linear;
+    cursor: pointer;
 
     @media screen and (min-width: $tablet) {
         font-size: 14px;
@@ -122,7 +125,12 @@
 
     @media screen and (min-width: $desktop) {
         font-size: 16px; 
-    } 
+    }
+
+    &:hover,
+    &:focus {
+        color: $title-color;
+    }
 }
 
 .contacts__day {
@@ -160,6 +168,9 @@
     font-size: 12px;
     line-height: 1.83;
     color: $contact-text-color;
+    transition: color 250ms linear;
+    cursor: pointer;
+
     &.nav {
         padding-top: 24px;
     }
@@ -170,6 +181,11 @@
 
     @media screen and (min-width: $desktop) {
         font-size: 16px; 
+    }
+
+    &:hover,
+    &:focus {
+        color: $title-color;
     }
 }
 
@@ -186,7 +202,8 @@
     display: block;
     text-align: center;
 
-    padding: 12px 33px;
+    padding: 13px 19px;
+    margin-bottom: 8px;
     border-radius: 10px;
 
     font-family: $font-montserrat;
@@ -194,9 +211,9 @@
     font-size: 14px;
     line-height: 1.29;
 
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    margin-bottom: 8px;
-    margin-bottom: 8px;
+    
 
     background-color: $accent-color;
     color: $title-color;
@@ -204,6 +221,7 @@
 
     @media screen and (min-width: $tablet) {
         margin-right: 18px;
+        margin-bottom: 0;
     }
 
     &:hover,
@@ -216,7 +234,7 @@
     display: block;
     text-align: center;
 
-    padding: 12px 33px;
+    padding: 12px 32px;
     border-radius: 10px;
 
     font-family: $font-montserrat;
@@ -224,12 +242,13 @@
     font-size: 14px;
     line-height: 1.29;
 
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    margin-bottom: 8px;
     
     color: #E1E1E1;
     border: 2px solid #F8D24E;
     background: #84A178;
+
     &:hover,
     &:focus {
         background: #84A178;

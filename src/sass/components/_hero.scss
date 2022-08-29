@@ -69,6 +69,8 @@
     z-index: 2;
 }
 .hero__title{
+    width: 247px;
+
     margin-bottom: 29px;
 
     font-family: 'Seymour One';
@@ -78,10 +80,12 @@
     text-transform: uppercase;
     color: $white-text-color;
     @media screen and (min-width:$tablet){
+        width: 181px;
         font-size: 18px;
         margin-bottom: 25px;
     }
     @media screen and (min-width:$desktop){
+        width: 367px;
         font-size: 38px;
         margin-bottom: 19px;
 
@@ -136,12 +140,13 @@
             border-color: $disabled-color;
         }
         
-        
+        transition: all 250ms linear, 
     }
 
     &--link{
         color: $accent-color;
         text-decoration: underline;
+        transition: all 250ms linear;
         
         &:hover,
         &:focus{
@@ -209,6 +214,12 @@
         text-align: right;
     }
     
+}
+.hero-right__box{
+    margin-bottom: 20px;
+    @media screen and (min-width:$desktop){
+        margin-bottom: 16px;
+    }
 }
 .hero-right__text{
     font-size: 8px;

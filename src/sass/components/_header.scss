@@ -17,6 +17,7 @@
 }
 
 .logo{
+    z-index: 1;
     @media screen and (min-width:$tablet){
         margin-right: 269px;
     }
@@ -28,9 +29,10 @@
     @media screen and (max-width:$desktop){
         
         position: absolute;
-        top: 75px;
+        top: 0;
         left: 0;
 
+        padding-top: 75px;
         height: 100vh;
         width: 100%;
 
@@ -67,14 +69,14 @@
         }
     }
     @media screen and (max-width:$desktop){
-        &:not(:last-child){
-            margin-bottom: 32px;
-        }
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
 }
 
 .navi__link{
+    display: block;
     color:$primary-color;
 
     font-weight: 700;
@@ -93,6 +95,7 @@
 
         font-size: 16px;
     }
+    transition: all 250ms linear, 
 }
 
 .btn-box{
@@ -101,6 +104,7 @@
 }
 
 .menu-btn{
+    z-index: 1;
     height: 40px;
     width: 40px;
     border: none;
@@ -130,6 +134,7 @@
 
 .buy-btn__icon{
     vertical-align: middle;
+    fill: $title-color;
 }
 
 .is-hiden-btn {
@@ -138,4 +143,8 @@
 
 .menu-btn.js-close-menu {
     margin-right: 0;
+}
+
+.menu-btn__icon {
+    fill: $primary-color;
 }
