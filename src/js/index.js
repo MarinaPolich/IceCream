@@ -4,13 +4,13 @@ $('.slider').slick({
     dots: true,
     arrows:false,
     slidesToShow: 1,
-responsive: [
-    {
-      breakpoint: 480,
-      settings: {
-slidesToScroll: 2} 
-},
-]
+// responsive: [
+//     {
+//       breakpoint: 480,
+//       settings: {
+// slidesToScroll: 2} 
+// },
+// ]
 });
 
 

@@ -9,7 +9,7 @@
     background-image: url(../images/gallery_reviews/bgimob2x.jpg);
   }
 
-  @media screen and (min-width: 480px) and (max-width: 768px) {
+  @media screen and (min-width: $tablet) {
     background-image: url(../images/gallery_reviews/bgitab1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -19,16 +19,7 @@
     }
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    background-image: url(../images/gallery_reviews/bgidesk1x.jpg);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/gallery_reviews/bgidesk2x.jpg);
-    }
-  }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     background-image: url(../images/gallery_reviews/bgidesk1x.jpg);
 
     @media (min-device-pixel-ratio: 2),
@@ -40,12 +31,12 @@
 }
 .revierw__container {
     padding-top: 161px;
-padding-bottom: 359px;
-    @media screen and (min-width: 768px){
+    padding-bottom: 359px;
+    @media screen and (min-width: $tablet){
         padding-top: 218px;
         padding-bottom: 384px;
     }
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: $desktop){
         padding-top: 452px;
         padding-bottom: 207px;
     }
@@ -98,7 +89,7 @@ padding-bottom: 359px;
   color: $primary-color;
   // text-underline-offset: 10px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     background-image:none;
     font-weight: 500;
     line-height: 1.86;
@@ -107,7 +98,7 @@ padding-bottom: 359px;
         max-width: 705px;
         border-radius: 24px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 16px;
     padding: 29px 109px;
         max-width: 968px;
@@ -128,7 +119,7 @@ padding-bottom: 359px;
   font-size: 20px;
   font-weight: 500;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     font-size: 16px;
   }
 }
