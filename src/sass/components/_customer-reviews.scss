@@ -112,7 +112,9 @@
     }
   }
 }
-.review__name {
+.review__name,
+.review__name--cite {
+  font-style: normal;
   line-height: 1.86;
   text-align: center;
   color: $text-color;
